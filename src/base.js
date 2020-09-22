@@ -12,4 +12,4 @@ const base = Rebase.createClass(firebase.database())
 
 export { firebaseApp }
 
-export default base
+export default base 
