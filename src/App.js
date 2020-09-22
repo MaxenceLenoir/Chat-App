@@ -20,10 +20,10 @@ class App extends Component {
       .keys(this.state.messages)
       .map(key => (
         <Message
-          key={key}
+          key = {key}
           message={this.state.messages[key].message}
           pseudo={this.state.messages[key].pseudo} />
-        ))
+      ))
 
     return (
       <div className='box'>
@@ -35,9 +35,9 @@ class App extends Component {
           </div>
         </div>
         <Formulaire
-        length={140}
-        pseudo = {this.state.pseudo}
-        addMessage={this.addMessage}/>
+          length={140}
+          pseudo={this.state.pseudo}
+          addMessage={this.addMessage}/>
       </div>
     )
   }
